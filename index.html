@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We are the Champions</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+    <body>
+        <div class="main">
+            <img src="freddie.png" alt="excited person">
+            <h1>We are the Champions</h1>
+            <textarea class="input" placeholder="Write your endorsement here" id="input-el"></textarea>
+            <div class="cover">
+                <input class="input-2" type="text" placeholder="From" id="from-el">
+                <input class="input-2" type="text" placeholder="To" id="to-el">
+            </div>
+            <button class="publish" id="btn-el">Publish</button>
+            <h2> - Endorsements - </h2>
+            <div class="endorse">
+                <ul id="endorse-el">
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <script src="index.js" type="module"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const appSettings = {
+                    databaseURL: "https://playground-932bd-default-rtdb.firebaseio.com/"
+                };
+        
+                const likeEl = document.getElementById("likeButton");
+        
+                likeEl.addEventListener("click", function() {
+                    console.log("Hello"); 
+                });
+            });
+        </script>
+        
+    </body>
+</html>
